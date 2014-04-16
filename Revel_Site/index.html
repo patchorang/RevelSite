@@ -6,154 +6,143 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/backstretch.js"></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+    <!-- Title Bar -->
+    <div class="contain-to-grid fixed" id="top-bar-whole">
+      <div id="header-bar"></div>
+      <nav id="top-bar-section" class="top-bar" data-topbar>
+        <div class="row">
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+          <ul class="title-area">
+            <li class="logo">
+              <a href="home.html"><img src="assets/logo.png"></a>
+            </li>
+          </ul>
+
+            <ul class="left">
+              <li class="has-form">
+                <div class="row">
+                  <div class="small-10 columns">
+                  <input class="search-bar" type="text" placeholder="Search for events, activities, and more">
+                </div>
+                <div class="small-2 columns">
+                  <a href="#" class="revel-button">Search</a>
+                </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul id="top-bar-options">
+              <li><a id="nav-toggle" class="revel-button" href="">Menu</a></li>
+              <li><a class="revel-callout-button" href="create.html">Host an Event</a></li>
+            </ul>
+
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
+
+      </nav>
+
+      <nav id="nav-bar" class="top-bar" data-topbar>
+        <div class="row bottom-bar-section">
+          <ul class="left">
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="activity.html">Community Resources</a></li>
+            <li><a href="activity.html">Calendar</a></li>
+            <li><a href="activity.html">Partners</a></li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
+      </nav>
+    </div>
+    <!-- /Title Bar -->
+
+    <div id="wrap">
+      <!-- Content Wrapper -->
+      <div id="content-wrapper">
+        <!-- Acitivity Bar -->
+        <div class="row home-row">
+          
+            <div class="small-4 columns tile-home" id="volunteer_tile">
+             <a href="volunteer.html">
+              <div class="fade-layer">
                 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
               </div>
-            </div>
+             
+                  <h2>Volunteer</h2>
+                </a>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+          <div class="small-4 columns tile-home" id="classes_tile">
+          <a href="classes.html">
+            <div class="fade-layer">
+              
             </div>
+            
+                <h2>Classes</h2>
+              </a>
           </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+          <div class="small-4 columns tile-home" id="activities_tile">
+          <a href="activities.html">
+            <div class="fade-layer">
+              
             </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
+            
+                <h2>Activities</h2>
+              </a>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        </div>
+        <!-- /Activity Bar -->
+
+        <!-- Feature Bar -->
+        <div class="row home-row">
+          <div class="small-12 columns" id="feature-bar">
+
+          </div>
+        </div>
+        <!-- /Feature Bar -->
+
+        <!-- Resources Bar -->
+        <div class="row home-row">
+          
+          <div class="small-4 columns tile-home " id="resources_tile">
+          <a href="communityresources.html">
+                <h2>Community Resources</h2>
+              </a>
+          </div>
+
+          <div class="small-4 columns tile-home" id="calendar_tile">
+          <a href="calendar.html">
+                <h2>Calendar</h2>
+              </a>
+          </div>
+			
+          <div class="small-4 columns tile-home" id="partners_tile">
+          <a href="partners.html">
+                <h2>Partners</h2>
+              </a>
+          </div>
+          
+        </div>
+        <!-- /Resources Bar -->
+      </div>
+
+      <div id="footer">
+        <div id="copyright">Copyright © 2013 Moringa Living, Inc. All rights reserved.</div>
+        <div id="social-links"></div>
+        <div id="legal-links">
+          <ul>
+            <li>Our Story</li>
+            <li>Privacy and Terms of Use</li>
+            <li>HIPPA Notice</li>
+          </ul>
         </div>
       </div>
+      <!-- /Content Wrapper -->
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
