@@ -1,0 +1,6 @@
+Mockery allows you to create interactive Javascript prototypes that use user input without a backend.
+
+To capture user input to store later, add the 'mock-input' class to the field. Also, note the id of the field.
+To pass this data to the next page, you must specifiy the class 'mock-link' on the <a> tag. If an <a> is followed that is not a 'mock-link' all data will be dropped.
+Finally, to use the mock data, simply create a div with the class 'mock-output' and with the same id as the original 'mock-input' field.
+Once a pice of mock data has been used, it is no longer accessible.
